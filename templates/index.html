@@ -957,7 +957,7 @@
             <div class="cta-content" data-aos="fade-up" data-aos-delay="200">
               <h2>Subscribe to our newsletter</h2>
               <p>Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit.</p>
-              <form action="{% url 'newsletter' %}" method="post" class="php-email-form cta-form" data-aos="fade-up" data-aos-delay="300">
+              <form action="#" method="post" >
               {% csrf_token %}
                 <div class="input-group mb-3">
                   <input type="email" class="form-control" placeholder="Email address..." aria-label="Email address" aria-describedby="button-subscribe">
@@ -1135,7 +1135,7 @@
           </div>
 
           <div class="col-lg-7">
-            <form action="{% url 'contact' %}" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form  method="post">
               {% csrf_token %}
               <div class="row gy-4">
 
@@ -1159,10 +1159,6 @@
                   <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
                 </div>
 
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
 
                   <button type="submit">Send Message</button>
                 </div>
@@ -1187,7 +1183,7 @@
           <div class="col-lg-6">
             <h4>Join Our Newsletter</h4>
             <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-            <form action="{% url 'newsletter' %}" method="post" class="php-email-form">
+            <form action="#" method="post">
               {% csrf_token %}
               <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
               <div class="loading">Loading</div>
